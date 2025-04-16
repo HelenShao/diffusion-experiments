@@ -1,0 +1,44 @@
+{
+    "experiment": "vanilla",
+    "archi": "UNet2DModel",
+    "model_type": "standard",
+    "dataset_type": "wg",
+    "scheduler": "ddpm",
+    "gen_samples": false,
+    "num_inference_steps": 50,
+    "n_epochs": 100,
+    "loss_fn": "mse",
+    "num_cond": 4,
+    "sample_size": 28,
+    "layers_per_block": 1,
+    "block_out_channels": [
+        32,
+        64,
+        64
+    ],
+    "device": "cuda",
+    "learning_rate": 0.001,
+    "patience": 2000,
+    "num_train_timesteps": 1000,
+    "min_valid_loss": Infinity,
+    "seed": 4,
+    "freq_obs": [
+        93.0,
+        143.0,
+        220.0,
+        280.0
+    ],
+    "fg_models": [
+        "d1",
+        "s1",
+        "a2"
+    ],
+    "nside": 2048,
+    "lmin": 0,
+    "lmax": 2000,
+    "ell_cutoff": 200,
+    "stamp_size_pixels": 256,
+    "taper_width_pixels": 5,
+    "pad_width_pixels": 0,
+    "normalizer_path": null
+}
