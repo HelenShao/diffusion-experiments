@@ -566,3 +566,4 @@ with open(config_file_path, 'w') as f:
 
 print(f"Updated configuration saved to {config_file_path}")
 accelerator.print('Training completed!')
+# Added test comment
